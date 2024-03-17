@@ -7,10 +7,10 @@ from langchain.agents import AgentExecutor
 from langchain_community.utilities import SQLDatabase
 
 # Set OpenAI API key
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = " "
 
 # Create SQL database connection
-db = SQLDatabase.from_uri("mysql://root:Root%40123@localhost/Demo_db")
+db = SQLDatabase.from_uri("mysql://user:password@localhost/Demo_db")
 
 # Create SQLDatabaseToolkit with an OpenAI language model
 llm = OpenAI(temperature=0)
